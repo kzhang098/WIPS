@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0000999999975" prefWidth="316.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.session.LogInController">
+  <children>
+    <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+          <children>
+            <Label text="WIPS">
+              <font>
+                <Font name="System Bold" size="30.0" />
+              </font>
+            </Label>
+            <TextField fx:id="userField" prefWidth="200.0" promptText="username" />
+            <PasswordField fx:id="passField" prefWidth="200.0" promptText="password" />
+            <Button fx:id="loginBtn" maxWidth="+Infinity" mnemonicParsing="false" onAction="#handle" text="Log in" textAlignment="CENTER" />
+          </children>
+          <padding>
+            <Insets bottom="100.0" left="80.0" right="80.0" top="60.0" />
+          </padding>
+        </VBox>
+      </center>
+    </BorderPane>
+  </children>
+</AnchorPane>

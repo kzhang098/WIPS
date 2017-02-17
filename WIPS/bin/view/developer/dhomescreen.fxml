@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.developer.AdminHomeController">
+  <children>
+    <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+          <children>
+            <HBox fillHeight="true" prefHeight="-1.0" prefWidth="200.0" spacing="20.0">
+              <children>
+                <Label text="Created Workflows">
+                  <font>
+                    <Font name="System Bold" size="25.0" />
+                  </font>
+                </Label>
+                <VBox alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="299.0" HBox.hgrow="ALWAYS">
+                  <children>
+                    <Button fx:id="logoutBtn" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#handle" prefHeight="31.0" prefWidth="121.0" text="Log out" textAlignment="CENTER" />
+                  </children>
+                </VBox>
+              </children>
+            </HBox>
+            <ListView fx:id="createdWorkFlows" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <VBox alignment="CENTER_RIGHT" prefHeight="-1.0" prefWidth="-1.0">
+              <children>
+                <HBox alignment="CENTER_RIGHT" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                  <children>
+                    <Button fx:id="undobutton" onAction="#handle" mnemonicParsing="false" prefHeight="31.0" prefWidth="121.0" text="Undo" />
+                    <Button fx:id="deleteBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="31.0" prefWidth="121.0" text="Delete" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+                    <Button fx:id="editbtn" mnemonicParsing="false" onAction="#handle" prefHeight="31.0" prefWidth="121.0" text="Edit Workflow" HBox.hgrow="ALWAYS" />
+                    <Button fx:id="editUserBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="31.0" prefWidth="121.0" text="Edit Users" textAlignment="CENTER" />
+                    <Button fx:id="createWFBtn" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#handle" text="Create new workflow" />
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </children>
+        </VBox>
+      </center>
+      <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+    </BorderPane>
+  </children>
+</AnchorPane>
